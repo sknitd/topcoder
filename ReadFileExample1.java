@@ -30,7 +30,7 @@ int ctr=0;
 			//System.out.println(s);
 			String[] str=new String[ctr];
 			ctr=0;str[0]="dfh";
-			System.out.println(str[0]);
+			//System.out.println(str[0]);
 			fr1 = new FileReader(FILENAME);
 			br1 = new BufferedReader(fr1);
 			while ((s1 = br1.readLine()) != null) {
@@ -42,7 +42,22 @@ int ctr=0;
 				ctr++;
 				//s=s+sCurrentLine+'\n';
 			}
-			System.out.println(str[0]);
+			String st[]=str[1].split(",");
+			String st1[] = null;
+			String st2[][]=new String[ctr][500];
+			ctr=0;
+			for(String c:str)
+			{
+				st1=c.split(",");
+				st2[ctr++]=st1;
+			}
+			try {
+				System.out.println(st2[0][1]);
+			} catch (Exception e) {
+				// TODO Auto-generated catch block
+				System.out.println("null");
+			}
+			
 
 		} catch (IOException e) {
 
