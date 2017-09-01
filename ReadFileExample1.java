@@ -35,7 +35,7 @@ int ctr=0;
 			br1 = new BufferedReader(fr1);
 			while ((s1 = br1.readLine()) != null) {
 				//System.out.println("11");
-				s=s+sCurrentLine;
+				s=s+s1;
 				str[ctr]=s;
 				s="";
 				//System.out.println(sCurrentLine);
